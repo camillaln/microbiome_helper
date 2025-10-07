@@ -277,7 +277,7 @@ if ( opt$rel_abundance) {
 }
 
 # create stacked bar chart, with x-axis being samples, collapsing to user defined taxonomic rank, and weighted by actual OTU abundances
-stacked_plot <- qplot( Sample, data=input_subset_relab_focal_sum, geom="bar",fill=input_subset_relab_focal_sum$Taxa ,
+stacked_plot <- qplot( Sample, data=input_subset_relab_focal_sum, geom="bar",fill=Taxa ,
 	weight = CountContributedByOTU , xlab = "Samples" , ylab = paste( ylab_start, opt$function_id ) ) +  
 # include samples on x-axis that have no counts
 	scale_x_discrete( drop = FALSE )
