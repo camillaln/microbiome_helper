@@ -2,3 +2,7 @@
 morgan_testing
 kathy_testing
 dhwani_testing
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
