@@ -144,12 +144,12 @@ if(is.null(opt$input)) {
 }
 
 # Check that refFasta set.
-if(!opt$skip_taxa & is.null(opt$refFasta)) {
+if(!opt$skip_taxa && is.null(opt$refFasta)) {
   stop("Path to refFasta needs to be set.")
 }
 
 # Check that ref_species set if doing species assignment.
-if(!opt$skip_taxa & !opt$skip_species & is.null(opt$ref_species)) {
+if(!opt$skip_taxa && !opt$skip_species && is.null(opt$ref_species)) {
   stop("Path to FASTA for species assignment needs to be set.")
 }
 

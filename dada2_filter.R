@@ -138,13 +138,13 @@ parse_dada2_filt_params <- function(in_param, single_end, param_name) {
   }
   
   # Make sure that only one value given if SE.
-  if(single_end & length(in_param_split) != 1) {
+  if(single_end && length(in_param_split) != 1) {
     stop(paste("Error when parsing parameter", param_name, "-",
                "expected 1 input value, but got", length(in_param_split), 
                sep=" "))
     
     # Make sure that max of 2 values given if PE.
-  } else if(! single_end & length(in_param_split) > 2) {
+  } else if(! single_end && length(in_param_split) > 2) {
     stop(paste("Error when parsing parameter", param_name, "-",
                "expected max of 2 input values, but got", length(in_param_split), 
                sep=" "))

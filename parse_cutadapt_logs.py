@@ -117,7 +117,7 @@ def main():
                     if string2match in line:
 
                         count_regex = r".*" + re.escape(string2match) + \
-                                       "\s+" + "([0-9]+,*[0-9]*).*"
+                                       r"\s+" + "([0-9]+,*[0-9]*).*"
 
                         count_full_match = re.match(count_regex, line)
 
