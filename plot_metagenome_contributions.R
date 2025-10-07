@@ -80,7 +80,7 @@ if ( is.na( opt$input ) ) {
 }
 
 # Check that sort_taxa is either "name" or "abundance"
-if ( ( opt$sort_taxa != "name" ) & ( opt$sort_taxa != "count" ) ) {
+if ( ( opt$sort_taxa != "name" ) && ( opt$sort_taxa != "count" ) ) {
 	stop( "--sort_taxa needs to be either name (default) or count, not " , opt$sort_taxa , "\nType \"plot_metagenome_contributions.R --help\" for help.")
 }
 
